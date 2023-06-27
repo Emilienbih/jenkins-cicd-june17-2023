@@ -26,7 +26,7 @@ pipeline{
 
         stage('codequality+analysis'){
             steps{
-                sh "echo 'Running continouse feedback and testing'  "
+                sh "echo 'Running continous feedback and testing'  "
                 sh "mvn sonar:sonar"
             }
         }
