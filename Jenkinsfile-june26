@@ -26,21 +26,21 @@ pipeline{
 
         stage('codequality+analysis'){
             steps{
-                sh "echo 'Running continous feedback and testing'  "
+                sh "echo 'Running continouse feedback and testing'  "
                 sh "mvn sonar:sonar"
             }
         }
 
         stage('upload artifact to nexus'){
             steps{
-                sh "echo 'upload build artifact into nexus'"
+                sh "echo 'upload build artificat into nexus'"
                 sh "mvn deploy"
             }
         }
 
         stage('deploy to test environment'){
             steps{
-                sh "echo 'deploying to tomcat'"
+                sh "echo 'deploying to tomca'"
 
             }
         }
