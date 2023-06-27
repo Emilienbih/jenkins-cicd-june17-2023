@@ -33,7 +33,7 @@ pipeline{
 
         stage('upload artifact to nexus'){
             steps{
-                sh "echo 'upload build artificat into nexus'"
+                sh "echo 'upload build artifact into nexus'"
                 sh "mvn deploy"
             }
         }
