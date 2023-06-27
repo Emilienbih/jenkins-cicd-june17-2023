@@ -10,7 +10,7 @@ node{
         sh "${mavenHome}/bin/mvn clean package"
     }
 
-    stage('3-codequalitty-analysis'){
+    stage('3-codequality-analysis'){
         sh "${mavenHome}/bin/mvn sonar:sonar"
     }
 
