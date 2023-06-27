@@ -8,7 +8,7 @@
 	
 	<version>0.0.1-SNAPSHOT</version> 
 	
-	<name>class20welcomeapp</name>
+	<name>class20-welcomapp</name>
 
 	<description>Maven Web Project for Java Project</description>
 
@@ -84,6 +84,10 @@
 		
 		<!-- provided dependencies -->
 
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.0</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
